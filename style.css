@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #d4d4d8;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a1a1aa;
+}
+
+.container {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  box-shadow: 0px 0px 8px gray;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 2em 0;
+  border-bottom: 2px solid #5b33b6;
+  font-size: 1.3rem;
+  grid-area: 1 / 1 / 2 / 4;
+}
+header nav ul {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  list-style: none;
+  text-shadow: 2px 2px 10px;
+}
+header nav ul a {
+  text-decoration: none;
+}
+
+header button {
+  border: none;
+  padding: 0.7em 1.7em;
+  background-color: #65a30d;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px black;
+}
+
+.picture {
+  background-image: url("https://picsum.photos/400");
+  min-height: 30rem;
+}
+
+.main {
+  grid-area: 2 / 2 / 3 / 4;
+}
+.main h1 {
+  font-size: 5rem;
+  color: #06bbda;
+  margin-bottom: 0.7rem;
+}
+
+.main p {
+  font-size: 1.6rem;
+  color: black;
+}
+
+.sidebar {
+  background-color: pink;
+  border-top: 2px solid #5b33b6;
+  padding: 2em;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.sidebar ul li {
+  list-style: none;
+  padding: 0.4em;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+}
+
+.section {
+  grid-area: 3 / 2 / 4 / 4;
+  border: 1px solid #d4d4d8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.section h4,
+.section p {
+  margin-bottom: 1rem;
+}
+
+.section button {
+  border: 2px solid #06bbda;
+  padding: 0.6em;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px gray;
+}
+
+.small-images {
+  display: flex;
+  grid-area: 4/1/5/3;
+}
+
+.small-images div {
+  width: 100px;
+  margin: 1rem 0.5rem;
+}
+
+.small-images div img {
+  max-width: 100%;
+}
+
+.related-posts {
+  grid-area: 4/3/5/4;
+}
+
+.related-posts h4 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 0.5em;
+  margin: 1rem 0;
+}
+
+.related-posts ul {
+  margin-left: 2rem;
+}
+
+footer {
+  background-color: gray;
+  grid-area: 5 / 1 / 6 / 4;
+  padding: 3em 0;
+  text-align: center;
+}
+
+footer p,
+footer h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0.5em;
+}
